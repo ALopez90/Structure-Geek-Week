@@ -1,0 +1,189 @@
+.navbar:hover {
+    font-size: 2.7rem !important;
+    transition: 0.3s ease-in-out !important;
+}
+
+body {
+    background-color: darksalmon;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.cardBox {
+    perspective: 750px;
+    margin: 15px;
+
+}
+
+.card {
+    position: relative;
+    width: 75px;
+    height: 75px;
+    background: #fff;
+    transform-style: preserve-3d;
+    transition: 0.5s ease;
+    box-shadow: 0 8px 8px rgba(0, 0, 0, 5);
+}
+
+.twitter {
+    background: #55acee;
+}
+
+
+.snapchat {
+    background: #efef4f;
+}
+
+.instagram {
+    background: #7f1734;
+
+}
+
+.linkedin {
+    background: #0077b5;
+
+}
+
+.card-front,
+.card-back {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 75px;
+    height: 75px;
+    color: #fff;
+    backface-visibility: hidden;
+}
+
+.card-front {
+    display: flex;
+    font-size: 30px;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+.card-back {
+    display: flex;
+    font-size: 16px;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+.cardBox:hover .card {
+    transform: rotateY(180deg);
+}
+
+.card-back {
+    transform: rotateY(180deg);
+}
+
+.SM {
+    position: fixed;
+}
+
+.container {
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    margin-left: -64.5px;
+    margin-top: -85.5px;
+}
+
+.ghost {
+    animation: float 3s ease-out infinite;
+}
+
+@keyframes float {
+    50% {
+        transform: translate(0, 20px);
+    }
+}
+
+.shadowFrame {
+    width: 130px;
+    margin-top: 15px;
+}
+
+.shadow {
+    animation: shrink 3s ease-out infinite;
+    transform-origin: center center;
+
+    ellipse {
+        transform-origin: center;
+    }
+}
+
+@keyframes shrink {
+    0% {
+        width: 90%;
+        margin: 0 5%;
+    }
+
+    50% {
+        width: 60%;
+        margin: 0 18%;
+    }
+
+    100% {
+        width: 90%;
+        margin: 0 5%;
+    }
+}
+
+.GeekWeek {
+    color: cornflowerblue;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 60px;
+    text-align: center;
+    animation-name: BounceIn;
+    animation-duration: 5s;
+}
+
+.GeekWeek:hover {
+    color: dodgerblue;
+    font-size: 63px;
+    transition: 0.5s ease-in-out;
+}
+
+.GeekWeek-mob {
+    color:darkslateblue;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 60px;
+    text-align: center;
+    animation-name: BounceIn;
+    animation-duration: 5s;
+
+}
+
+@keyframes BounceIn {
+    0% {transform: 0.1;
+        opacity:0;}
+    60% {transform: 3;
+        opacity:1 ;}
+    100% {transform: 1}
+}
+
+@media (min-width: 992px) {
+    .desktop-only {
+        display: inline-block !important;
+    }
+}
+
+@media (max-width: 1080px) {
+    .desktop-only {
+        display: none !important;
+    }
+}
+
+@media (min-width: 720px) {
+    .mobile-only {
+        display: none;
+    }
+}
+
+@media (max-width: 990px) {
+    .mobile-only {
+        display: inline-block !important;
+    }
+}

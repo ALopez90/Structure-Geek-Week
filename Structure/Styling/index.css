@@ -1,0 +1,43 @@
+.SubHead {
+    color: darkslategray;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    text-align: center;
+}
+
+.SecHead {
+    color: cornflowerblue;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 55px;
+    text-align: center;
+}
+
+.SecHead:hover {
+    font-size: 60px;
+    transition: 0.5s ease-in-out;
+}
+
+.paragraphs {
+    color: darkslategray;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 40px;
+}
+
+.opinion {
+    color: cornflowerblue;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 40px;
+    text-align: center;
+}
+
+.SecHead-mob {
+    color: darkslateblue;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 40px;
+    text-align: center;
+}
+
+.SecHead-mob:hover {
+    font-size: 60px;
+    transition: 0.5s ease-in-out;
+}
